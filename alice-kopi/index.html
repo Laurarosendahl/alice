@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alices Restaurent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Navigation - Opgave fra d. 01.02.22 - Spørgsmål 5-->
+    <nav class="navbar">
+        <div class="logo">  
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+
+        </div>
+            <div class="links">
+                <ul class="nav-links">
+                    <li><a class="menu" href="#">Menu</a></li>
+                    <li><a class="bookbord" href="book.html">Book Bord</a></li>
+                    <li><a class="kontakt" href="#">Kontakt</a></li>
+                    <li><a class="omos" href="#">Om os</a></li>
+                </ul>
+            </div>
+
+            <!--Burgernavigation - Opgave fra d. 01.02.22 spørgsmål 6-->
+            
+            <div id="burger">☰</div>
+            <ul id="showBrg">
+              <li> <a href="#">Menu</a></li>
+              <li> <a href="book.html">Book Bord</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">Om Os</a></li>
+            </ul>
+
+
+        
+            <!-- herunder alm dropdown -->
+            <ul id="largeDev">
+              <li>Large 1</li>
+              <li>Large 2</li>
+              <li>Large 3</li>
+            </ul>
+            
+    </nav>
+
+<!--Pastabillede på forsiden-->
+    <div class="forsidebillede">
+        <img src="images/mad1.png" alt="mad">
+    </div>
+
+    <!--Skiftende citat - se JS-->
+    <div id="citat"></div>
+
+    <div id="bookknap"><h3> <a href="book.html"> Book Bord</h3></a></div>
+
+    <div id="arrow">
+    <i class="fas fa-sort-down"></i>
+    </div>
+
+    <div class="velkomst">
+        <h2>Velkommen til Alices Spisehus</h2>
+        <p>I hjertet af Latinerkvarteret i Århus ligger internationalt anerkendte restaurent. <br> Nyd en madoplevelse ud over det sædvanlige
+            i hyggelige, uformelle omgivelser. <br> Vi har skabt et unikt univers, hvor maden er i højsædet og atmosfæren inviterer til gode studner hele aftenen. <br>
+            Vi glæder os til at byde dig velkommen. 
+        </p>
+    </div>
+
+    <!--Liste over medarbejdere se JS-->
+    <div id="medarb1"><h2>Medarbejdere</h2><p class="tekst">Vores medarbejdere arbejder hver dag på højtryk for at give dig og jeres selskab den bedste oplevelse på Alices Spisehus.</p><p class="liste">Hold musen over for at se en liste over medarbejderene hos os</p></div>
+    <div id="medarb"></div>
+
+
+<!--Kontaktformular se JS-->
+<form id="contact" action="action.html">
+    <h1>Book Bord</h1>
+    <fieldset id="navn">
+        <legend>Indtast Navn og Email</legend>
+        Name: <input type="text" name="Name" placeholder="Navn" value=""> <br>
+        Email: <input type="text" name="Email" placeholder="Email" value=""> <br>
+        <div id="btn1" class="alleKnapperne" type="button">Næste</div>
+    </fieldset>
+
+    <fieldset id="antal">
+        <legend>Antal Gæster</legend>
+    <input type="radio" id="en" name="antal_gaester" value="En">
+    <label for="en">1</label><br>
+    <input type="radio" id="to" name="antal_gaester" value="To">
+    <label for="to">2</label><br>
+    <input type="radio" id="tre" name="antal_gaester" value="Tre">
+    <label for="tre">3</label><br>
+    <input type="radio" id="fire" name="antal_gaester" value="Fire">
+    <label for="fire">4</label><br>
+    <input type="radio" id="fem" name="antal_gaester" value="Fem">
+    <label for="fem">5</label><br>
+    <input type="radio" id="seks" name="antal_gaester" value="Seks">
+    <label for="seks">+ 6</label><br>
+
+    <div id="btn2" class="alleKnapperne" type="button">Næste</div>
+    <div id="btn22" class="alleKnapperne" type="button">Forrige</div>
+    </fieldset>
+
+    <fieldset id="date">
+        <legend>Vælg dato</legend>
+    Dato: <input type="text" name="Dato" placeholder="DD/MM/ÅÅÅÅ" value=""> <br>
+        <div id="btn3" class="alleKnapperne" type="button">Næste</div>
+        <div id="btn33" class="alleKnapperne" type="button">Forrige</div>
+    </fieldset>
+
+    <fieldset id="tid">
+        <legend>Vælg Tidspunkt</legend>
+    <input type="radio" id="tid_et" name="tidspunkt" value="Tid_et">
+    <label for="tid_et">17.30</label><br>
+    <input type="radio" id="tid_to" name="tidspunkt" value="Tid_to">
+    <label for="tid_et">18.00</label><br>
+    <input type="radio" id="tid_tre" name="tidspunkt" value="Tid_et">
+    <label for="tid_et">18.30</label><br>
+    <input type="radio" id="tid_fire" name="tidspunkt" value="Tid_fire">
+    <label for="tid_fire">19.00</label><br>
+    <input type="radio" id="tid_fem" name="tidspunkt" value="Tid_fem">
+    <label for="tid_fem">19.30</label><br>
+    <input type="radio" id="tid_seks" name="tidspunkt" value="Tid_seks">
+    <label for="tid_seks">20.00</label><br>
+    <legend>I har bordet i 2 timer</legend>
+    <div id="btn4" class="alleKnapperne" type="button">Næste</div>
+    <div id="btn44" class="alleKnapperne" type="button">Forrige</div>
+    </fieldset>
+
+    <fieldset id="lastField">
+        <p>Tak for din henvendelse. Du får bekræftelse på mail. Vi glæder os til at byde dig/jer velkommen. (Tryk submit for at indsende din reservation.)</p>
+    <input id="submit" class="alleKnapperne" type="submit" value="submit">
+    </fieldset>
+    
+    </form>
+
+<!--Video med svampe-->
+<div id="videobaggrund">
+    <center>
+      <video id="video" src='images/svampe.mov' cotrols autoplay controls loop></video>
+    </center>
+
+</div>
+    <!--Footer-->
+    <footer>
+        <div id="logofooter">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; Laura Rosendahl Therkildsen</p>
+        </div>
+
+        <p id="dato"></p>
+        
+        <div id="adresse"></div>
+
+
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
